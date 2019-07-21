@@ -1,0 +1,619 @@
+﻿@font-face {
+    font-family: robo;
+    src: url(../font/RobotoSlab-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(44, 40, 40);
+}
+
+#main {
+    width: 1300px;
+    height: 731px;
+    overflow: hidden;
+    background: url(../pic/car.png)no-repeat;
+    margin: 100px auto 0 auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+#main>#longman {
+    width: 400%;
+    height: 100%;
+    transition: 0.3s;
+    position: relative;
+    left: 0;
+}
+
+#main>#longman>.child {
+    width: 25%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+#main>#menu {
+    width: 700px;
+    height: 55px;
+    margin-left: 35px;
+    position: absolute;
+    z-index: 1000;
+}
+
+#main>#menu>div:hover {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#main>#menu>div {
+    width: 90px;
+    transition: 0.2s;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    height: 30px;
+    margin-top: 21px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: robo;
+    font-weight: 500;
+    line-height: 28px;
+    background-color: rgba(196, 0, 0, 0.788);
+}
+
+#main>#menu>#m1 {
+    color: #d7cb23;
+}
+
+#main>.socialnet {
+    /*border: 1px solid red;*/
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 300px;
+    z-index: 1000;
+}
+
+#main>.socialnet>.img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 266px;
+    z-index: 20;
+}
+
+#main>.socialnet>.img:hover>.info {
+    width: 200px;
+    cursor: pointer;
+}
+
+#main>.socialnet>.img>.info {
+    width: 0;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    background-color: rgba(196, 0, 0, 0.788);
+    border-radius: 5px 0 0 5px;
+    z-index: 10;
+    color: white;
+    font-family: robo;
+    text-align: center;
+    font-size: 13px;
+    line-height: 31px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#main>.socialnet>.img>img:hover {
+    cursor: pointer;
+}
+
+#main>.socialnet>.img>img {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    z-index: 30;
+}
+
+#mc {
+    position: absolute;
+    top: 625px;
+    right: 99px;
+}
+
+#l5 {
+    width: 70px;
+    top: 653px;
+    left: 875px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
+    height: 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+#l6 {
+    width: 70px;
+    top: 653px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    left: 1202px;
+    position: absolute;
+    height: 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.ch1>.line {
+    position: absolute;
+    height: 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.ch1:hover>.l1 {
+    transform: rotate(58deg) translateX(0);
+    transition: 0.5s;
+}
+
+.l1 {
+    transition: 0.3s;
+    width: 110px;
+    top: 203px;
+    left: 252px;
+    transform: rotate(58deg) translateX(-900px);
+}
+
+.ch1:hover>.l2 {
+    transform: translateX(0);
+    transition: 0.5s;
+}
+
+.l2 {
+    transition: 0.3s;
+    width: 169px;
+    top: 381px;
+    left: 202px;
+    transform: translateX(-900px);
+}
+
+.ch1:hover>.l3 {
+    transform: rotate(135deg) translateX(0);
+    transition: 0.5s;
+}
+
+.l3 {
+    transition: 0.3s;
+    width: 148px;
+    top: 585px;
+    left: 595px;
+    transform: rotate(135deg) translateX(900px);
+}
+
+.ch1:hover>.l4 {
+    transition: 0.5s;
+    transform: rotate(55deg) translateX(0);
+}
+
+.l4 {
+    transition: 0.3s;
+    width: 148px;
+    top: 273px;
+    left: 887px;
+    transform: rotate(55deg) translateX(900px);
+}
+
+.ch1>.circle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: rgb(253, 183, 31);
+}
+
+.ch1:hover>.c1 {
+    transition: 0.3s 0.5s;
+    transform: translateY(0);
+}
+
+.c1 {
+    transition: 0.3s;
+    top: 150px;
+    left: 272px;
+    transform: translateY(-900px);
+}
+
+.ch1:hover>.c2 {
+    transition: 0.3s 0.5s;
+    transform: translateX(0);
+}
+
+.c2 {
+    transition: 0.3s;
+    top: 378px;
+    left: 195px;
+    transform: translateX(-900px);
+}
+
+.ch1:hover>.c3 {
+    transition: 0.3s 0.5s;
+    transform: translateY(0);
+}
+
+.c3 {
+    transition: 0.3s;
+    top: 635px;
+    left: 612px;
+    transform: translateY(900px);
+}
+
+.ch1:hover>.c4 {
+    transition: 0.3s 0.5s;
+    transform: translateX(0);
+}
+
+.c4 {
+    transition: 0.3s;
+    top: 208px;
+    left: 914px;
+    transform: translateX(900px);
+}
+
+.ch1>.text:hover {
+    cursor: pointer;
+    color: rgb(73, 255, 216);
+    transition: 0.2s;
+}
+
+.ch1>.text {
+    /*border: 1px solid red;*/
+    position: absolute;
+    font-family: robo;
+    font-size: 16px;
+    color: rgb(226, 216, 78);
+    text-align: center;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.ch1:hover>.t1 {
+    transition: 0.3s 0.8s;
+    transform: translateY(0);
+}
+
+.t1 {
+    transition: 0.3s;
+    top: 140px;
+    left: 48px;
+    width: 230px;
+    transform: translateY(-900px);
+}
+
+.ch1:hover>.t2 {
+    transition: 0.3s 0.8s;
+    transform: translateX(0);
+}
+
+.t2 {
+    transition: 0.3s;
+    top: 368px;
+    left: 38px;
+    width: 152px;
+    transform: translateX(-900px);
+}
+
+.ch1:hover>.t3 {
+    transition: 0.3s 0.8s;
+    transform: translateY(0);
+}
+
+.t3 {
+    transition: 0.3s;
+    top: 627px;
+    left: 463px;
+    width: 152px;
+    transform: translateY(900px);
+}
+
+.ch1:hover>.t4 {
+    transition: 0.3s 0.8s;
+    transform: translateY(0);
+}
+
+.t4 {
+    transition: 0.3s;
+    top: 199px;
+    left: 757px;
+    width: 152px;
+    transform: translateY(-900px);
+}
+
+.ch2>.dark,
+.ch3>.dark,
+.ch4>.dark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*.ch2>.dark>.raw {
+    border: 1px solid Blue;
+}*/
+
+.ch2>.dark>.left {
+    width: 640px;
+    height: 360px;
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 10px 10px 0 10px;
+    background-color: rgba(0, 0, 0, 0.801);
+    position: relative;
+}
+
+.ch2>.dark>.left:hover>.left {
+    height: 100%;
+    transition: 0.1s;
+}
+
+.ch2>.dark>.left>.left {
+    transition: 0.3s;
+    width: 2px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(233, 66, 0);
+    ;
+}
+
+.ch2>.dark>.left:hover>.top {
+    width: 100%;
+    transition: 0.1s 0.1s;
+}
+
+.ch2>.dark>.left>.top {
+    transition: 0.3s;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(233, 66, 0);
+    ;
+}
+
+.ch2>.dark>.left:hover>.right {
+    height: 100%;
+    transition: 0.1s 0.2s;
+}
+
+.ch2>.dark>.left>.right {
+    transition: 0.3s;
+    width: 2px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(233, 66, 0);
+    ;
+}
+
+.ch2>.dark>.left:hover>.down {
+    width: 100%;
+    transition: 0.1s 0.3s;
+}
+
+.ch2>.dark>.left>.down {
+    transition: 0.3s;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(233, 66, 0);
+    ;
+}
+
+.ch2>.dark>.left>img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.ch2>.dark>.right {
+    width: 1000px;
+    height: 135px;
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, 0.801);
+    padding: 10px 3px;
+}
+
+.ch2>.dark>.right>img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 2px rgb(233, 66, 0);
+    transition: 0.3s;
+}
+
+.ch2>.dark>.right>img {
+    width: 240px;
+    height: 135px;
+    transition: 0.2s;
+    margin: 0 0 0 8px;
+}
+
+.ch3>.dark>h2 {
+    width: 600px;
+    height: 100px;
+    margin: 130px 0 0 70px;
+    color: rgb(255, 255, 255);
+    font-family: robo;
+    font-size: 22px;
+}
+
+.ch3>.dark>.vid {
+    /*border: 1px solid blue;*/
+    margin: 0 0 0 70px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.ch3>.dark>.imgg:hover {
+    cursor: pointer;
+    transition: 20s;
+    transform: rotate(36000deg);
+}
+
+.ch3>.dark>.imgg {
+    transition: 1s;
+    position: absolute;
+    top: 270px;
+    right: 180px;
+    width: 250px;
+}
+
+.ch4>.dark>.rad {
+    float: left;
+    padding: 5px;
+    /*border: 1px solid fuchsia;*/
+    width: 400px;
+    height: 400px;
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+
+/*.ch4>.dark>.left:hover,
+.ch4>.dark>.right:hover {
+    box-shadow: 0px 0px 3px 3px rgb(233, 66, 0);
+    transition: 0.3s;
+}*/
+
+.ch4>.dark>.left:hover>.top,
+.ch4>.dark>.right:hover>.top {
+    height: 0;
+    transition: 0.3s;
+}
+
+.ch4>.dark>.left>.top,
+.ch4>.dark>.right>.top {
+    position: absolute;
+    transition: 0.3s;
+    width: 100%;
+    height: 408px;
+    background-color: rgba(0, 0, 0, 0.842);
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid rgb(233, 66, 0);
+}
+
+.ch4>.dark>.left {
+    margin-left: 190px;
+    position: relative;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.ch4>.dark>.left>img,
+.ch4>.dark>.right>img {
+    width: 100%;
+    height: 250px;
+}
+
+.ch4>.dark>.left>h2,
+.ch4>.dark>.right>h2 {
+    width: 100%;
+    height: 20px;
+    margin: 7px 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: robo;
+    font-size: 18px;
+    line-height: 10px;
+}
+
+.ch4>.dark>.left>h3,
+.ch4>.dark>.right>h3 {
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+    text-align: left;
+    color: #ffffff;
+    font-family: robo;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 200;
+}
+
+.ch4>.dark>.left>h3:last-child:hover,
+.ch4>.dark>.right>h3:last-child:hover {
+    cursor: pointer;
+    color: rgb(226, 43, 43);
+    transition: 0.3s;
+}
+
+.ch4>.dark>.left>h3:last-child,
+.ch4>.dark>.right>h3:last-child {
+    width: 50px;
+    transition: 0.3s;
+    height: 20px;
+    margin: 25px 0 0 0;
+    text-align: left;
+    color: rgb(194, 149, 0);
+    font-family: robo;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 200;
+}
+
+.ch4>.dark>.right {
+    margin-left: 120px;
+    transition: 0.2s;
+    position: relative;
+}
+
+.ch4>.dark>.right>img {
+    width: 100%;
+    height: 250px;
+}
+
+.vid:hover>.left {
+    transition: 0.5s;
+    transform: rotate(-29.5deg) translateY(290px);
+}
+
+.vid>.left {
+    transition: 0.5s;
+    position: absolute;
+    width: 651px;
+    height: 500px;
+    border: 2px solid orangered;
+    background-color: rgba(0, 0, 0, 0.649);
+    transform: rotate(-29.5deg) translateY(0);
+    top: 126px;
+    left: 73px;
+}
+
+.vid:hover>.right {
+    transform: rotate(-29.5deg) translateY(-279px);
+    transition: 0.5s;
+}
+
+.vid>.right {
+    transition: 0.5s;
+    position: absolute;
+    width: 651px;
+    height: 500px;
+    border: 2px solid orangered;
+    background-color: rgba(0, 0, 0, 0.649);
+    transform: rotate(-29.5deg) translateY(0);
+    top: -311px;
+    left: -174px;
+}
